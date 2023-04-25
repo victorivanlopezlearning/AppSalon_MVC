@@ -1,0 +1,1 @@
+function iniciarApp(){eliminarAlertas()}function eliminarAlertas(){const e=document.querySelector(".alerta");e&&setTimeout(()=>{e.remove()},3e3)}document.addEventListener("DOMContentLoaded",()=>{iniciarApp()});

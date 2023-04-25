@@ -1,0 +1,1 @@
+function iniciarApp(){buscarCitas()}function buscarCitas(){inputFecha=document.querySelector("#fecha"),inputFecha.addEventListener("input",n=>{const t=n.target.value;window.location="?fecha="+t})}document.addEventListener("DOMContentLoaded",()=>{iniciarApp()});
