@@ -21,6 +21,7 @@ class Router
     {
         $currentUrl = $_SERVER['REQUEST_URI'] === '' ? '/' : $_SERVER['REQUEST_URI'];
         $method = $_SERVER['REQUEST_METHOD'];
+        $currentUrl = explode('?', $currentUrl)[0]; // Recortar la URL para que sólo valide las rutas antes del signo ?
 
         if ($method === 'GET') {
             $fn = $this->getRoutes[$currentUrl] ?? null;
